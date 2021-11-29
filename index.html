@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla JS Dictionary</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Vanilla JS Dictionary</h1>
+    <div id="input-and-buttons">
+      <input id="word-input-field" class="rounded" placeholder="type word here" type="text" />
+      <button type="button" id="search-button" class="rounded">SEARCH</button>
+      <button type="button" id="history-button" class="rounded">SHOW SEARCH HISTORY</button>
+    </div>
+      <div id="result" class="hidden">
+        <div id="word-and-phonetics">
+        <h3 id="word" class="inline"></h3>
+        <h3 id="phoneticsText" class="inline"></h3>
+        <div id="audio-button" class="inline">
+        </div>
+      </div>
+      <div id="definitions-div">
+        <h4 id="definitions-header"></h4>
+        <ol id="definitions">
+        </ol>
+      </div>
+      <div id="origin-div">
+        <h4 id="origin-header"></h4>
+        <p id="origin">
+        </p>
+      </div>
+      </div>
+      <div id="error" class="hidden">
+        <h3 id="error-heading">∙ Word not found ∙</h3>
+          <p>
+            Please check your speeling and try again
+          </p>
+      </div>
+      <ol id="history-list"></ol>
+  </body>
+</html>

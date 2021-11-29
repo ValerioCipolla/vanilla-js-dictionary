@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=M+PLUS+1+Code&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=M+PLUS+1+Code&family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #272727;
+  --grey: #747474;
+  --orange: #FF652F;
+  --yellow: #FFE400;
+  --green: #14A76C;
+}
+
+.hidden {
+  display: none;
+}
+
+.inline {
+  display: inline;
+}
+
+body {
+  background-color: var(--black);
+  color: white;
+  font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+h1 {
+  color: var(--yellow);
+  margin: 3rem 2rem;
+}
+
+.rounded{
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  background-color: var(--green);
+  color: white;
+  font-weight: bolder;
+}
+
+button:hover {
+  outline: 2px solid white;
+  background-color: rgba(20,167,108,0.5) ;
+}
+
+#word {
+  color: var(--green);
+  font-size: 2rem;
+}
+
+audio {
+ transform: translate(0, 25%) scale(80%);
+}
+
+#input-and-buttons {
+  margin: 3rem 1rem;
+}
+
+input {
+  display: block;
+  margin: 1rem;
+  width: 50%;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+button {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.grid {
+  margin: 3rem 1rem;
+  display: grid;
+  grid-gap: 2rem;
+}
+
+#definitions-div ol {
+  margin: 1rem 1.5rem;
+}
+
+#origin-div p {
+  margin: 1rem 0;
+}
+
+#error-heading {
+  color: var(--orange);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#error {
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+
+#history-list {
+  margin: 2rem;
+  margin-left: 5rem;
+  font-size: 1.5rem;
+}
