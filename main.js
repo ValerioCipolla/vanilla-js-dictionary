@@ -20,7 +20,6 @@ async function getData(word) {
     .then(async function (response) {
       let data = await response.json();
       let dataObject = data[0];
-      console.log(dataObject)
       let wordObject = {
         word: dataObject.word,
         phoneticsText: dataObject.phonetics[0].text,
@@ -32,7 +31,6 @@ async function getData(word) {
       displayResult(wordObject);
     })
     .catch(function (err) {
-      console.log(err)
       displayError();
     });
 }
@@ -77,6 +75,7 @@ function searchWord() {
 }
 
 function showHistory() {
+  historyList.innerText = "";
   errorDiv.classList.add("hidden");
   result.classList.add("hidden");
   result.classList.remove("grid")
